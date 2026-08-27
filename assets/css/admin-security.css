@@ -1,0 +1,91 @@
+/**
+ * Security & Login Activity Log Module Styles
+ *
+ * @package YonkaAdminToolkit
+ */
+
+/* Admin Page Layout & Header */
+.wrap h1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.yonkatk-clear-logs-btn {
+	font-size: 13px;
+	text-decoration: none;
+}
+
+/* Filter Form */
+.yonkatk-filter-form {
+	background: #ffffff;
+	padding: 15px;
+	border-radius: 8px;
+	border: 1px solid #ccd0d4;
+	margin: 20px 0;
+	display: flex;
+	gap: 15px;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.yonkatk-filter-field {
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+
+.yonkatk-filter-field label{
+	font-weight: bold;
+	color: #1d2327;
+}
+
+/* Dashboard Widget Lists & Text */
+.yonkatk-dashboard-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.yonkatk-dashboard-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #f0f0f1;
+	font-size: 13px;
+}
+
+.yonkatk-dashboard-meta {
+	color: #666666;
+}
+
+.yonkatk-dashboard-footer {
+	margin-top: 10px;
+	text-align: right;
+}
+
+/* Event Badges */
+.yonkatk-badge-success {
+	color: #10b981;
+	font-weight: bold;
+}
+
+.yonkatk-badge-failed {
+	color: #ef4444;
+	font-weight: bold;
+}
+
+.yonkatk-badge-logout {
+	color: #6b7280;
+}
+
+.yonkatk-badge-plugin-active {
+	color: #3b82f6;
+}
+
+.yonkatk-badge-plugin-deactive {
+	color: #f59e0b;
+}
+
+.yonkatk-badge-default {
+	color: #6b7280;
+}

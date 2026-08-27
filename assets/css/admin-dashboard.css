@@ -1,0 +1,87 @@
+/**
+ * Main Dashboard Stylesheet for Yonka Admin Toolkit
+ */
+
+.yonkatk-dashboard-wrap {
+	margin-top: 20px;
+}
+
+.yonkatk-dashboard-subtitle {
+	font-size: 14px;
+	color: #50575e;
+	margin-top: 5px;
+}
+
+.yonkatk-divider {
+	margin: 20px 0 25px 0;
+	border: 0;
+	border-top: 1px solid #dcdcde;
+}
+
+/* Grid Layout for Module Cards */
+.yonkatk-cards-grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(min(100%, 200px), 1fr));
+	gap: 15px;
+}
+
+.yonkatk-card {
+	background: #ffffff;
+	padding: 18px;
+	border-radius: 8px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.yonkatk-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.yonkatk-card h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.yonkatk-card h3 a {
+	text-decoration: none;
+	color: #1d2327;
+}
+
+.yonkatk-card h3 a:hover {
+	color: #2271b1;
+}
+
+.yonkatk-card p {
+	margin: 0;
+	font-size: 13px;
+	color: #646970;
+	line-height: 1.4;
+}
+
+/* Responsive Grid Adaptation */
+@media (max-width: 1600px) {
+	.yonkatk-cards-grid {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+@media (max-width: 1200px) {
+	.yonkatk-cards-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 900px) {
+	.yonkatk-cards-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.yonkatk-cards-grid {
+		grid-template-columns: 1fr;
+	}
+}

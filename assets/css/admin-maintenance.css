@@ -1,0 +1,89 @@
+/**
+ * Maintenance Mode Admin Styles
+ *
+ * @package YonkaAdminToolkit
+ */
+
+.yonkatk-maint-wrap {
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.yonkatk-maint-card {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	margin-top: 15px;
+	max-width: 800px;
+}
+
+.yonkatk-desc-margin {
+	margin-top: 8px;
+}
+
+/* Toggle Switch Styling */
+.yonkatk-switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+}
+
+.yonkatk-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.yonkatk-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #cccccc;
+	transition: 0.3s;
+	border-radius: 26px;
+}
+
+.yonkatk-slider::before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #ffffff;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+input:checked + .yonkatk-slider {
+	background-color: #6366f1;
+}
+
+input:checked + .yonkatk-slider::before {
+	transform: translateX(24px);
+}
+
+/* Status Badges */
+.yonkatk-status-badge {
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.yonkatk-status-active {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.yonkatk-status-disabled {
+	background: #f1f5f9;
+	color: #475569;
+}

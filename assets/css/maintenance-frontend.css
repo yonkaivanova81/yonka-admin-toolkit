@@ -1,0 +1,129 @@
+/**
+ * Maintenance Mode Frontend Template Styles
+ *
+ * @package YonkaAdminToolkit
+ */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	background-color: #f8fafc;
+	color: #1e293b;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	padding: 20px;
+}
+
+/* Maintenance Card */
+.yonkatk-maintenance-card {
+	background: #ffffff;
+	padding: 3.5rem 4rem;
+	border-radius: 2rem;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+	border: 1px solid #e2e8f0;
+	text-align: center;
+	max-width: 680px;
+	width: 100%;
+	z-index: 10;
+	position: relative;
+}
+
+/* Gear Icon & Animation */
+.yonkatk-gear-wrapper {
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.yonkatk-gear-icon {
+	width: 64px;
+	height: 64px;
+	animation: yonkatkGearSpin 6s linear infinite;
+}
+
+@keyframes yonkatkGearSpin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Typography */
+.yonkatk-maint-title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	color: #0f172a;
+	margin-bottom: 1.25rem;
+	line-height: 1.2;
+}
+
+.yonkatk-maint-description {
+	font-size: 1.15rem;
+	color: #475569;
+	line-height: 1.7;
+	margin-bottom: 2rem;
+	white-space: pre-line;
+}
+
+/* Pulse Loading Bar */
+.yonkatk-pulse-bar {
+	height: 6px;
+	width: 100%;
+	background: #e2e8f0;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+}
+
+.yonkatk-pulse-bar::after {
+	content: '';
+	position: absolute;
+	left: -50%;
+	height: 100%;
+	width: 50%;
+	background: linear-gradient(90deg, var(--yonkatk-gear-color, #6366f1), #a855f7);
+	border-radius: 3px;
+	animation: yonkatkLoading 2s infinite ease-in-out;
+}
+
+@keyframes yonkatkLoading {
+	0% {
+		left: -50%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+	.yonkatk-maintenance-card {
+		padding: 2rem 1.5rem;
+	}
+
+	.yonkatk-maint-title {
+		font-size: 1.75rem;
+	}
+
+	.yonkatk-maint-description {
+		font-size: 1rem;
+	}
+
+	.yonkatk-gear-icon {
+		width: 48px;
+		height: 48px;
+	}
+}

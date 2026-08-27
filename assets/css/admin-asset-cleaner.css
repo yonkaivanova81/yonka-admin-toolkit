@@ -1,0 +1,85 @@
+/**
+ * Asset Cleaner Module Styles
+ */
+
+.yonkatk-asset-cleaner-wrap {
+	margin-top: 15px;
+}
+
+.yonkatk-info-banner {
+	margin: 15px 0 20px 0;
+	padding: 12px 15px;
+}
+
+.yonkatk-asset-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.yonkatk-asset-panel {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 6px;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.yonkatk-asset-panel h2 {
+	margin-top: 0;
+	font-size: 15px;
+	border-bottom: 1px solid #dcdcde;
+	padding-bottom: 10px;
+}
+
+.yonkatk-empty-text {
+	color: #646970;
+	font-style: italic;
+}
+
+.yonkatk-asset-list {
+	max-height: 450px;
+	overflow-y: auto;
+	padding-right: 5px;
+}
+
+.yonkatk-asset-item {
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f1;
+	background-color: transparent;
+	transition: background-color 0.2s ease;
+}
+
+.yonkatk-asset-item.is-disabled {
+	background-color: #fcf0f0;
+}
+
+.yonkatk-asset-label {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.yonkatk-asset-label.is-protected {
+	cursor: not-allowed;
+}
+
+.yonkatk-asset-item.is-disabled .yonkatk-asset-name {
+	color: #d63638;
+}
+
+.yonkatk-asset-name small {
+	color: #646970;
+	font-weight: normal;
+}
+
+.yonkatk-asset-src {
+	font-size: 11px;
+	color: #646970;
+	word-break: break-all;
+	margin-left: 24px;
+	margin-top: 4px;
+}

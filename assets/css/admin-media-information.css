@@ -1,0 +1,144 @@
+/**
+ * Media Inventory Module Styles
+ *
+ * @package YonkaAdminToolkit
+ */
+
+/* Statistics Cards Grid */
+.yonkatk-mo-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.yonkatk-mo-stat-card {
+	background: #fff;
+	padding: 15px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+}
+
+.yonkatk-mo-stat-card.blue { border-left: 4px solid #2271b1; }
+.yonkatk-mo-stat-card.green { border-left: 4px solid #10b981; }
+.yonkatk-mo-stat-card.orange { border-left: 4px solid #f59e0b; }
+.yonkatk-mo-stat-card.red { border-left: 4px solid #ef4444; }
+
+.yonkatk-mo-stat-label {
+	font-size: 12px;
+	color: #646970;
+	text-transform: uppercase;
+}
+
+.yonkatk-mo-stat-value {
+	font-size: 24px;
+	font-weight: bold;
+	color: #1d2327;
+}
+
+.yonkatk-mo-stat-value.orange { color: #b45309; }
+.yonkatk-mo-stat-value.red { color: #991b1b; }
+
+/* Navigation Tabs & Filters */
+.yonkatk-mo-tabs-wrapper {
+	margin-bottom: 15px;
+}
+
+.yonkatk-mo-filters-wrapper {
+	margin-bottom: 15px;
+}
+
+/* Loading & Visibility Helpers */
+.yonkatk-mo-loading-box {
+	padding: 30px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+}
+
+.yonkatk-mo-spinner {
+	float: none;
+	margin: 0 5px 0 0;
+}
+
+.yonkatk-mo-hidden {
+	display: none;
+}
+
+/* Table Row Cells & Previews */
+.yonkatk-mo-td {
+	padding: 10px;
+}
+
+.yonkatk-mo-preview-img {
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	border-radius: 4px;
+	border: 1px solid #c3c4c7;
+}
+
+.yonkatk-mo-preview-fallback {
+	width: 45px;
+	height: 45px;
+	background: #f0f0f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+.yonkatk-mo-item-title {
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.yonkatk-mo-item-meta {
+	font-size: 11px;
+	color: #646970;
+}
+
+.yonkatk-mo-size-cell {
+	font-weight: 600;
+	color: #2c3338;
+}
+
+.yonkatk-mo-size-cell.oversized {
+	color: #b45309;
+}
+
+/* Badges */
+.yonkatk-mo-badge-oversized {
+	background: #fef3c7;
+	color: #92400e;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-weight: bold;
+	margin-right: 4px;
+}
+
+.yonkatk-mo-badge-alt-ok {
+	background: #d1fae5;
+	color: #065f46;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.yonkatk-mo-badge-no-alt {
+	background: #fee2e2;
+	color: #991b1b;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.yonkatk-mo-empty-row {
+	padding: 20px;
+	text-align: center;
+	color: #646970;
+}

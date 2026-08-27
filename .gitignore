@@ -1,0 +1,8 @@
+# WordPress / PHP специфични
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+*.log
+.idea/
+.vscode/

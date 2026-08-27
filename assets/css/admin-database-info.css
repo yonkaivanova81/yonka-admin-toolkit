@@ -1,0 +1,107 @@
+/**
+ * Database Information Module Styles
+ */
+
+.yonkatk-db-wrap {
+	margin-top: 15px;
+}
+
+.yonkatk-db-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.yonkatk-db-inline-form {
+	margin: 0;
+}
+
+.yonkatk-db-error-notice {
+	margin: 15px 0;
+	padding: 10px;
+}
+
+.yonkatk-db-cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.yonkatk-db-card {
+	background: #ffffff;
+	padding: 18px;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.yonkatk-card-blue {
+	border-left: 4px solid #0284c7;
+}
+
+.yonkatk-card-green {
+	border-left: 4px solid #10b981;
+}
+
+.yonkatk-card-amber {
+	border-left: 4px solid #f59e0b;
+}
+
+.yonkatk-card-purple {
+	border-left: 4px solid #8b5cf6;
+}
+
+.yonkatk-card-title {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #64748b;
+}
+
+.yonkatk-card-value {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0f172a;
+	margin-top: 5px;
+}
+
+.yonkatk-card-value.yonkatk-val-compact {
+	font-size: 20px;
+}
+
+.yonkatk-card-subtext {
+	font-size: 12px;
+	color: #64748b;
+}
+
+.yonkatk-db-panel {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #ccd0d4;
+	margin-top: 20px;
+}
+
+.yonkatk-db-panel h2 {
+	margin-top: 0;
+}
+
+.yonkatk-db-panel-desc {
+	color: #666666;
+	font-size: 13px;
+}
+
+.yonkatk-db-table {
+	margin-top: 15px;
+}
+
+.yonkatk-badge {
+	background: #e2e8f0;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-size: 11px;
+}
+
+.yonkatk-overhead-warn {
+	color: #d97706;
+}

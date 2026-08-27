@@ -1,0 +1,36 @@
+/**
+ * Marquee Announcement Bar Admin Styles
+ */
+
+.yonkatk-marquee-admin-wrap {
+	max-width: 1000px;
+	margin-top: 20px;
+}
+
+.yonkatk-marquee-admin-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+	padding: 20px 30px;
+	margin-top: 15px;
+}
+
+.yonkatk-marquee-admin-card .form-table th {
+	width: 220px;
+	font-weight: 600;
+}
+
+.yonkatk-marquee-admin-card input[type='color'] {
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	height: 36px;
+	width: 60px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.yonkatk-marquee-admin-card select[multiple] {
+	border-radius: 4px;
+	padding: 6px;
+}
